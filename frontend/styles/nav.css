@@ -1,0 +1,107 @@
+body {
+  font-family: 'Nunito Sans', sans-serif;
+  background-color: grey;
+}
+nav {
+  background-color: #2B3C4D;
+  color: whitesmoke;
+  height: 50px;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+}
+
+nav > h1 {
+  list-style: none;
+  padding: 5px;
+  font-size: large;
+  font-weight: 800;
+}
+
+nav > h1:hover {
+  cursor: pointer;
+  border-bottom: solid 2px whitesmoke;
+}
+
+.contact {
+  position: relative;
+  display: block;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  height: fit-content;
+  z-index: 1;
+}
+
+.hover-area {
+  position: absolute;
+  height: 60px;
+  width: 100%;
+}
+
+.contact:hover {
+  border-bottom: none;
+}
+
+h1 > span:hover {
+  border-bottom: solid 2px whitesmoke;
+}
+
+.contact-container {
+  display: none;
+  flex-direction: column;
+  border-radius: 3px;
+  background-color: #6F4F5C;
+  margin-top: 8px;
+}
+
+.contact:hover .contact-container {
+  display: flex;
+  position: absolute;
+}
+
+.hover-area:hover .contact-container {
+  display: flex;
+  position: absolute;
+}
+
+.hover-area:hover h1 > span {
+  border-bottom: solid 2px whitesmoke;
+}
+
+.contact-container li {
+  padding: 5px;
+  align-content: left;
+}
+
+a {
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+.contact-container li:hover {
+  background-color: #7F2B4E;
+}
+
+.contact-container li:hover:first-child {
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+}
+
+.contact-container li:hover:last-child {
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+nav > h1:last-child {
+  margin-left: 10px;
+}
+
+.arrow-up {
+  width: 0; 
+  height: 0; 
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 5px solid black;
+}
+
